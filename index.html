@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            /* border: 1px solid red; */
+            margin:0 auto;
+            width: 400px;
+            height: 450px;
+            display: grid;
+            margin-top:100px;
+          padding-top: 76px;;
+            grid-template-columns: repeat(4, 70px);
+            grid-template-rows: repeat(5, 70px);
+            gap: 10px;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+
+        #box {
+            /* border: 2px solid black; */
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+        .box1 {
+            /* grid-row-start: 1; */
+            grid-column-start: 1;
+            grid-column-end: 5;
+            
+            
+        }
+
+        div p {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .blasckbox{
+            background-color: black;
+        }
+        .wh{
+            color:white;
+        }
+        .red{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-size: 50px;color: #009999;text-align: center;margin-top: 40px;"><b>DCC Calculator</b></div>
+    <div class="container">
+        <div id="parent">
+            <div id="box" class="box1"> </div>
+            <div id="box">
+                <div>
+                    <p>1</p>
+                </div>
+            </div>
+            <div id="box">
+                <div>
+                    <p>2</p>
+                </div>
+            </div>
+            <div id="box">
+                <div>
+                    <p>3</p>
+                </div>
+            </div>
+            <div id="box" class="blasckbox" >
+                <div>
+                    <p class="wh" >&#43</p>
+                </div>
+            </div>
+            <div id="box">
+                <div>
+                    <p>4</p>
+                </div>
+            </div>
+            <div id="box">
+                <div>
+                    <p>5</p>
+                </div> </div>
+            <div id="box">
+                <div>
+                    <p>6</p>
+                </div>
+            </div>
+            <div id="box" class="blasckbox"> 
+                <div>
+                    <p class="wh">-</p>
+                </div>
+            </div>
+            <div id="box">
+                <div>
+                    <p>7</p>
+                </div>
+            </div>
+            <div id="box">
+                <div>
+                    <p>8</p>
+                </div>
+            </div>
+            <div id="box"> 
+                <div>
+                    <p>9</p>
+                </div>
+            </div>
+            <div id="box" class="blasckbox">
+                <div>
+                    <p class="wh">X</p>
+                </div>
+            </div>
+            <div id="box" class="red"> 
+                <div>
+                    <p>C</p>
+                </div>
+            </div>
+            <div id="box">
+                <div>
+                    <p>0</p>
+                </div>
+            </div>
+            <div id="box" class="blasckbox"> 
+                <div>
+                    <p class="wh">=</p>
+                </div>
+            </div>
+            <div id="box" class="blasckbox">
+                <div>
+                    <p class="wh">/</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
